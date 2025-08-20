@@ -95,3 +95,41 @@
 .animate-bounce-slow {
   animation: bounce-slow 2s infinite;
 }
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  /* Main heading */
+  h1.text-9xl {
+    font-size: 5rem !important; /* Much smaller on mobile */
+  }
+  
+  /* Main subheading */
+  #hero p.text-5xl {
+    font-size: 2rem !important; /* text-4xl */
+  }
+  
+  /* Cursor in name component */
+  h1 span.text-\[118px\] {
+    font-size: 5rem !important;
+  }
+  
+  /* Section headings */
+  h2.font-sans {
+    font-size: 48px !important;
+  }
+  
+  /* Subsection headings */
+  h3.font-sans {
+    font-size: 1.5rem !important; /* text-2xl */
+  }
+  
+  /* Project tech stack headings */
+  h4.font-serif {
+    font-size: 1.5rem !important; /* text-2xl */
+  }
+  
+  /* Paragraph text in sections */
+  .flex-col p.text-2xl {
+    font-size: 1rem !important; /* text-base */
+  }
+}
