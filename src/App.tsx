@@ -49,6 +49,8 @@ function App() {
               <img src="/mail.svg" alt="Email" />
             </a>
           </div>
+
+          <p className='font-sans text-2xl text-deep-blue reveal reveal-up'>last updated November 11, 2025</p>
         </section>
 
         {/* Experience Section */}
@@ -100,18 +102,6 @@ function App() {
             </p>
             {/* Shown only on mobile */}
             <a href="https://flashbackstudy.com" className='sm:hidden px-4 py-2 font-serif text-xl rounded-lg bg-bright-blue text-white self-start'>Learn More</a>
-          </div>
-
-          <div className='flex flex-col gap-[36px] reveal reveal-left border-2 border-bright-blue rounded-lg p-3'>
-            <div className='flex flex-row justify-between items-center sm:gap-4'>
-              <h3 className='font-sans text-4xl text-deep-blue font-semibold'>Music Generation Model</h3>
-              <a href="https://github.com/colinlevine/music-generation-model" className='hidden sm:block px-4 py-2 font-serif text-xl rounded-lg bg-bright-blue text-white whitespace-nowrap flex-shrink-0'>Listen to Songs</a>
-            </div>
-            <h4 className='font-serif text-4xl text-deep-blue'>Python, TensorFlow, Keras, NumPy</h4>
-            <p className='font-sans text-2xl text-deep-blue'>
-              Trained on a dataset comprising 13,000 lines of classical music, the model utilizes <span className='font-semibold'>Long Short-Term Memory neural network architecture</span> to capture intricate patterns and structures present in musical compositions. The model generates music as text that is seamlessly converted to MIDI format and synthesized into a grand piano WAV file.</p>
-            {/* Shown only on mobile */}
-            <a href="https://github.com/colinlevine/music-generation-model" className='sm:hidden px-4 py-2 font-serif text-xl rounded-lg bg-bright-blue text-white self-start'>Listen to Songs</a>
           </div>
 
         </section>
