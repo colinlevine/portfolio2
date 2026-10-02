@@ -139,7 +139,10 @@ function App() {
           </div>
 
           <div className='flex flex-col gap-[36px] reveal reveal-left border-2 border-bright-blue rounded-lg p-3'>
-            <h3 className='font-sans text-4xl text-deep-blue font-semibold'>Savira - AI Security</h3>
+            <div className='flex flex-row justify-between items-center sm:gap-4'>
+              <h3 className='font-sans text-4xl text-deep-blue font-semibold'>Savira - AI Security</h3>
+              <a href="https://substack.com/home/post/p-171507545" className='hidden sm:block px-4 py-2 font-serif text-xl rounded-lg bg-bright-blue text-white whitespace-nowrap flex-shrink-0'>Learn More</a>
+            </div>
             <h4 className='font-serif text-4xl text-deep-blue'>
               Fall 2025
               <br />
@@ -149,6 +152,8 @@ function App() {
                 <li>Utilized traditional deep learning principles around image classification to create text classification models capable of detecting prompt injection attacks with 90%+ accuracy on leading benchmarks.</li>
                 <li>Used Qwen3-4B base model as the backbone and attached a classification head, training with <span className='font-semibold'>Low-Rank Adaptation (LoRA)</span> on an <span className='font-semibold'>NVIDIA A100 GPU</span>.</li>
             </ul>
+            {/* Shown only on mobile */}
+            <a href="https://substack.com/home/post/p-171507545" className='sm:hidden px-4 py-2 font-serif text-xl rounded-lg bg-bright-blue text-white self-start'>Learn More</a>
           </div>
 
           <div className='flex flex-col gap-[36px] reveal reveal-left border-2 border-bright-blue rounded-lg p-3'>
