@@ -37,6 +37,18 @@
   --color-deep-blue: #031D44;
 }
 
+/* Prevent horizontal panning on mobile (e.g. from off-screen reveal transforms) */
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+
+h1, h2, h3, h4, li, p {
+  overflow-wrap: break-word;
+}
+
 .font-sans {
   font-family: "Instrument Sans";
   font-style: normal;
