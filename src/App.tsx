@@ -69,8 +69,8 @@ function App() {
             </h4>
             <ul className='font-sans text-2xl text-deep-blue list-disc list-outside pl-8 space-y-[12px]'>
                 <li>Reached <span className='font-semibold'>100+ users in less than 2 months</span> and <span className='font-semibold'>paid out $100 to creators</span> on the platform.</li>
-                <li>Launched a <span className='font-semibold'>social media app</span> for creative writing (poems, essays, book excerpts, etc.) in June 2026 with a platform-wide subscription (instead of per publication) and a customizable full-screen vertical feed.</li>
-                <li>Shipped iOS app and 3-server architecture: main API, embeddings, and web server for browser version.</li>
+                <li>Launched a social media app for creative writing (poems, essays, book excerpts, etc.) in June 2026 with a platform-wide subscription (instead of per publication) and a customizable full-screen vertical feed.</li>
+                <li><span className='font-semibold'>Shipped iOS app</span> and 3-server architecture: main API, embeddings, and web server for browser version.</li>
                 <li>Users describe in natural language what they want to see more or less of in the feed.</li>
                 <li>From a user: “It was such a small moment that made me feel incredibly seen and encouraged as a writer.”</li>
             </ul>
