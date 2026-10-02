@@ -129,7 +129,8 @@
   }
   
   /* Paragraph text in sections */
-  .flex-col p.text-2xl {
+  .flex-col p.text-2xl,
+  .flex-col ul.text-2xl {
     font-size: 1rem !important; /* text-base */
   }
 }
