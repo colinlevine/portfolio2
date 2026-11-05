@@ -146,3 +146,41 @@ h1, h2, h3, h4, li, p {
     font-size: 1rem !important; /* text-base */
   }
 }
+
+/* Essay post body: each block slides in from the left (like .reveal-right) */
+.essay-body > * {
+  opacity: 0;
+  transform: translateX(-2.5rem);
+  transition: all 700ms;
+}
+
+.essay-body > .active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.essay-body p + p,
+.essay-body p + blockquote,
+.essay-body blockquote + p {
+  margin-top: 1.25em;
+}
+
+.essay-body p {
+  line-height: 1.5;
+}
+
+.essay-body blockquote {
+  border-left: 4px solid var(--color-bright-blue);
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .essay-body {
+    font-size: 1.125rem !important;
+  }
+
+  h1.essay-title {
+    font-size: 40px !important;
+  }
+}

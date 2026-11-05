@@ -1,27 +1,10 @@
-import { useEffect } from 'react';
+import useReveal from './hooks/useReveal';
 import Arrow from './components/arrow';
 import Name from './components/name';
 
 function App() {
 
-  useEffect(() => {
-    const observerCallback: IntersectionObserverCallback = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.1
-    });
-
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach((element) => observer.observe(element));
-
-    return () => observer.disconnect();
-  }, []);
+  useReveal();
 
   return (
     <>
